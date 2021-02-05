@@ -1,4 +1,3 @@
-"# pagina-geraldine" 
+"# pagina-geraldine"
 
-Página casi final en su version html
-"# pagina-geraldine" 
+Adaptación de la página a wordpress
