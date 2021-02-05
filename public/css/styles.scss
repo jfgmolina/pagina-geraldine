@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./mixin";
+@import "./general";
+@import "./inicio-badget";
+@import "./inicio-hero";
+@import "./inicio-caracteristicas";
+@import "./inicio-contacto";
+@import "./footer";
+.inicio-paralax {
+  background-image: url("../images/paralax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.contenido-container {
+  padding: 2rem 1rem;
+  h2 {
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+}

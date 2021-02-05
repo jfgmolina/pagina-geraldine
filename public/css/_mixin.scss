@@ -1,0 +1,26 @@
+//mediaqueries
+@mixin small-movil {
+  @media screen and (min-width: $breakpoint-movil-small) {
+    @content;
+  }
+}
+@mixin movil {
+  @media screen and (min-width: $breakpoint-movil) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media screen and (min-width: $breakpoint-large-desktop) {
+    @content;
+  }
+}

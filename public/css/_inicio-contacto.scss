@@ -1,0 +1,49 @@
+.inicio-contacto {
+  @include tablet {
+    padding: 0;
+    margin: 0;
+  }
+  .row {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    @include tablet {
+      margin: 0;
+    }
+    .inicio-contacto-imagenes {
+      padding: 0;
+      .row {
+        & > div {
+          padding: 0;
+        }
+      }
+      figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .inicio-contacto-texto {
+      padding: 4rem 2rem 1rem;
+      h3 {
+        text-align: center;
+      }
+      .inicio-contacto-datos-contenedor {
+        ul {
+          list-style: none;
+          border: 1px solid #ccc;
+          padding: 2rem 2rem 1rem;
+          li {
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

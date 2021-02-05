@@ -1,0 +1,51 @@
+.inicio-caracteristicas {
+  background-color: #eee;
+  padding: 6rem 0;
+  .row {
+    margin: auto;
+    max-width: 940px;
+    &:nth-of-type(2n) {
+      .inicio-caracteristicas-imagen {
+        @include tablet {
+          order: 1;
+        }
+      }
+    }
+    &:nth-of-type(2n) {
+      .inicio-caracteristicas-texto {
+        @include tablet {
+          order: 2;
+        }
+      }
+    }
+    .inicio-caracteristicas-texto {
+      background-color: white;
+      padding: 4rem 2rem;
+      h3 {
+        text-align: center;
+        font-weight: bold;
+        color: orange;
+      }
+      hr {
+        width: 20%;
+        height: 3px;
+        margin: 2rem auto;
+      }
+      p {
+        padding: 0 2rem;
+      }
+    }
+    .inicio-caracteristicas-imagen {
+      padding: 0;
+      figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

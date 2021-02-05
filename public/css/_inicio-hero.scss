@@ -1,0 +1,85 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include desktop {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(31, 168, 226, 0.94);
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .hero-contenido-container {
+    width: 90%;
+    margin: auto;
+    @include tablet {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
+.hero-telefono-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  &.telefono-rojo {
+    box-shadow: 15px 15px 14px -7px rgb(31 168 226 / 94%);
+    color: #0bc1e4;
+    svg {
+      fill: #0bc1e4;
+    }
+  }
+  &.telefono-verde {
+    box-shadow: 15px 15px 14px -7px #0f0;
+    color: #0f0;
+    svg {
+      fill: #0f0;
+    }
+  }
+  svg {
+    width: 2rem;
+    height: 2rem;
+    @include tablet {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    @include desktop {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  span {
+    font-size: 2rem;
+    display: block;
+    @include tablet {
+      font-size: 2.5rem;
+    }
+    @include desktop {
+      font-size: 3.5rem;
+    }
+  }
+}
