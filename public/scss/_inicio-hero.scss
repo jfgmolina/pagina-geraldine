@@ -1,6 +1,6 @@
 .hero {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   background-image: url("../images/fondo.jpg");
@@ -43,7 +43,7 @@
   text-align: center;
   font-weight: bold;
   border-radius: 25px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
   &.telefono-rojo {
     box-shadow: 15px 15px 14px -7px rgb(31 168 226 / 94%);
@@ -73,13 +73,17 @@
     }
   }
   span {
-    font-size: 2rem;
-    display: block;
-    @include tablet {
-      font-size: 2.5rem;
-    }
-    @include desktop {
-      font-size: 3.5rem;
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 2rem;
+      display: block;
+      @include tablet {
+        font-size: 2.5rem;
+      }
+      @include desktop {
+        font-size: 3.5rem;
+      }
     }
   }
 }

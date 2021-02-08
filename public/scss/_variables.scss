@@ -5,6 +5,18 @@ $breakpoint-tablet: 768px;
 $breakpoint-desktop: 992px;
 $breakpoint-large-desktop: 1024px;
 
+/***************
+* viewpoint
+****************/
+$xsmall: 320px;
+$small: 480px;
+$medium: 769px;
+$large: 992px;
+$xlarge: 1024px;
+
 //generales
 $font-size: 18px;
-$font-family: 'Roboto', sans-serif;
+$font-family: "Roboto", sans-serif;
+
+//colores
+$azulado: rgb(44, 97, 158);

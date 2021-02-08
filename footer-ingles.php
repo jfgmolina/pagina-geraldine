@@ -1,13 +1,13 @@
       <footer>
         <div class="footer-copyright">
-          Copyright © 2021 . Todos los derechos reservados. Diseño web por
+          Copyright © 2021 susihotgirl.com. All rights reserved. Web design by
           <a href="https://josefgm.es">josefgm</a>
         </div>
-        <div class="footer-legal">
-          <a href="">Política de privacidad</a>
+<!--         <div class="footer-legal">
+          <a href="">Privacy Policy</a>
           |
-          <a href="">Política de cookies</a>
-        </div>
+          <a href="">Cookies policy</a>
+        </div> -->
         <div class="footer-social">
           <div class="footer-social-item footer-social-facebook">
             <a href="">
@@ -67,6 +67,7 @@
       </footer>
     </div>
     <!--fin wrapper-->
+    <?php get_template_part( 'template-parts/en/modal-cookies', 'cookies' ); ?>
   </body>
   <?php wp_footer(  ); ?>
 </html>

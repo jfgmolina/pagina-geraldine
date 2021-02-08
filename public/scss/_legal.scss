@@ -1,0 +1,73 @@
+.legal-container {
+  background: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 41%,
+    rgba(217, 217, 217, 1) 82%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=1 );
+  background-color: white;
+  width: 90%;
+  box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  padding: 3em 1.5em;
+  margin: 5em auto;
+  @include tablet {
+    width: 80%;
+  }
+  @include movil {
+    padding: 3em;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: $azulado;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    @include movil {
+      font-size: 2.5rem;
+    }
+  }
+  .contenido-container {
+    font-size: 0.8em;
+    @include movil {
+      font-size: 1.3em;
+    }
+    h2 {
+      color: $azulado;
+      font-size: 1em;
+      @include movil {
+        font-size: 1.8rem;
+      }
+    }
+    ul {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.legal-back {
+  margin-top: 2em;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.7em;
+    @include movil {
+      font-size: initial;
+    }
+  }
+  img {
+    width: 0.7em;
+    @include movil {
+      width: 1em;
+    }
+  }
+}
+.privacity-contact {
+  list-style-type: none;
+  text-decoration: none;
+}
